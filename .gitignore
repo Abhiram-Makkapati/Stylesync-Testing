@@ -1,0 +1,23 @@
+s1-t1/
+.firebase/
+/.DS_Store
+
+# debug logs from firebase dataconnect
+dataconnect-debug.log
+pglite-debug.log
+
+# ignore folders/files
+stylesync/build/
+stylesync/ios/
+stylesync/linux/
+stylesync/macos/
+stylesync/test/
+stylesync/web/
+stylesync/windows/
+stylesync/.metadata
+stylesync/analysis_options.yaml
+stylesync/pubspec.lock
+stylesync/README.md
+stylesync/.gitignore
+stylesync/.idea/
+stylesync/dataconnect

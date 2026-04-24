@@ -1,0 +1,67 @@
+{
+  "project_info": {
+    "project_number": "480355601723",
+    "project_id": "outfit-planner-7485e",
+    "storage_bucket": "outfit-planner-7485e.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:480355601723:android:0d91427532062d98327b1e",
+        "android_client_info": {
+          "package_name": "com.example.my_test_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDdZK8qtcOvhlodnkC-pMOrcFGmQh4gm2E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:480355601723:android:593c3a2365f1db19327b1e",
+        "android_client_info": {
+          "package_name": "com.example.stylesync"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDdZK8qtcOvhlodnkC-pMOrcFGmQh4gm2E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:480355601723:android:7334be825cd0a930327b1e",
+        "android_client_info": {
+          "package_name": "com.s1t1.stylesync"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDdZK8qtcOvhlodnkC-pMOrcFGmQh4gm2E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,31 @@
+{
+  "flutter": {
+    "platforms": {
+      "macos": {
+        "default": {
+          "projectId": "outfit-planner-7485e",
+          "appId": "1:480355601723:ios:d1159c14216cf411327b1e",
+          "uploadDebugSymbols": false,
+          "fileOutput": "macos/Runner/GoogleService-Info.plist"
+        }
+      },
+      "dart": {
+        "lib/firebase_options.dart": {
+          "projectId": "outfit-planner-7485e",
+          "configurations": {
+            "macos": "1:480355601723:ios:d1159c14216cf411327b1e",
+            "web": "1:480355601723:web:490e59340a3f547e327b1e"
+          }
+        }
+      }
+    }
+  },
+  "emulators": {
+    "dataconnect": {
+      "dataDir": "stylesync/dataconnect/.dataconnect/pgliteData"
+    }
+  },
+  "dataconnect": {
+    "source": "dataconnect"
+  }
+}
