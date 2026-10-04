@@ -8,7 +8,9 @@ import 'registration.dart';
 
 // ---------- Auth Service ----------
 class AuthService {
-  final FirebaseAuth _auth = FirebaseAuth.instance;
+  final FirebaseAuth _auth;
+
+  AuthService({FirebaseAuth? auth}) : _auth = auth ?? FirebaseAuth.instance;
 
   Stream<User?> get authStateChanges => _auth.authStateChanges();
 
@@ -71,13 +73,13 @@ class AuthService {
   }
 
   // ---------- Auto Logout on App Start ----------
-  static Future<void> handleAutoLogout() async {
+  static Future<void> handleAutoLogout({FirebaseAuth? auth}) async {
     final prefs = await SharedPreferences.getInstance();
     bool remember = prefs.getBool('rememberMe') ?? false;
 
     // If not remembered, sign out automatically
     if (!remember) {
-      await FirebaseAuth.instance.signOut();
+      await (auth ?? FirebaseAuth.instance).signOut();
     }
   }
 }

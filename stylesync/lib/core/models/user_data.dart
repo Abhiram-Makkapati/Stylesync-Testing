@@ -3,7 +3,12 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/foundation.dart';
 
 class UserData extends ChangeNotifier {
-  final FirebaseFirestore _firestore = FirebaseFirestore.instance;
+  final FirebaseFirestore _firestore;
+  final FirebaseAuth _auth;
+
+  UserData({FirebaseFirestore? firestore, FirebaseAuth? auth})
+      : _firestore = firestore ?? FirebaseFirestore.instance,
+        _auth = auth ?? FirebaseAuth.instance;
 
   // in memory set for quick username uniqueness check
   final Set<String> _registeredUsernames = <String>{};
@@ -25,7 +30,7 @@ class UserData extends ChangeNotifier {
   }
 
   Future<void> saveOutfit(DateTime date, List<String> itemIds) async {
-    final user = FirebaseAuth.instance.currentUser;
+    final user = _auth.currentUser;
     // --- MODIFIED: Throws an error instead of failing silently ---
     if (user == null) {
       throw Exception('User not logged in. Unable to save outfit.');
